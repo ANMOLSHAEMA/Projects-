@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Bombey</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <button id="cartBtn">Cart (0)</button>
+          </div>
+    </header>
+
+    <section class="main-content">
+        <h1>Welcome to MyShop!</h1>
+        <div class="product-container">
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61lLjrvDEkL._SL1500_.jpg" alt="Product 1" target="blank">
+            <h3>iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White</h3>
+            <p class="price">$949.99</p>
+            <button class="add-to-cart" onclick="addToCart('Product 1', 25)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71bEYFvV5lL._SL1500_.jpg" alt="Product 2" target="blank">
+            <h3>Eddioklp 4K Digital Camera With 40X Zoom,64Mp Dslr Camera For Photography Beginners,Autofocus 1080P Hd Vlogging Camera With Eis,32Gb Sd Card,2 Batteries</h3>
+            <p class="price">$249.99</p>
+            <button class="add-to-cart" onclick="addToCart('Product 2', 30)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71iyBsDDwQL._SL1500_.jpg" alt="Product 3" target="blank">
+            <h3>ASUS ROG Strix Scar 16 (2024), Intel Core i9 14900HX 14th Gen, 16"(40.64cm) 2.5K QHD+240Hz, Gaming Laptop(32GB DDR5/2TB SSD/12GB RTX 4080/Win11/Per-Key RGB/90WHr/Black/2.65Kg),
+              G634JZR-CM932WS</h3>
+            <p class="price">$3349.99</p>
+            <button class="add-to-cart" onclick="addToCart('Product 3', 40)">Add to Cart</button>
+          </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="reviews-container">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p class="review-text">"This product changed my life! Highly recommended." - John D.</p>
+                <p class="review-text">"Excellent quality and great value for money!" - Sarah P.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+            <form action="#" method="get">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100038832864102">Facebook</a>
+                <a href="https://www.instagram.com/amolsharma704/">Instagram</a>
+            </div>
+            <p>&copy; 2024 ShopNow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
